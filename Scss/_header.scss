@@ -1,0 +1,47 @@
+header{
+    position: sticky;
+    top: 0;
+    background: #ffff;
+    .container{
+        .head-area{
+            padding: 21px 0px;
+            @include flex(row, space-between, center);
+            .logo{
+                i{
+                    display: none
+                }
+            }
+            nav{
+                ul{
+                    @include flex(row, center, center);
+                    li{
+                        list-style: none;
+                        padding: 0px 32px;
+                        a{
+                            color: #000;
+                            text-align: center;                            
+                            font-family: Open Sans;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 100%; /* 16px */
+                            text-decoration: none;
+                        }
+                        button{
+                            display: none;
+                            @extend .btn;
+                        }
+                    }
+                }
+            }
+            .head-btn{
+                button{
+                    padding: 14px 24px;
+                    color: white;
+                    border-radius: 5px;
+                    background: #0E1017;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+#team{
+    .container{
+        .team-head{
+            padding: 30px 0px;
+            h1{
+                @extend .head-title;
+                margin-bottom: 20px;
+            }
+            p{
+                @extend .title;
+                max-width: 450px;
+                margin: auto;
+            }
+        }
+        .team-container{
+            padding: 50px 0px;
+            @include flex(row, center, center);
+            flex-wrap: wrap;
+            gap: 2rem;
+            .team-member{
+                img{
+                    border-radius: 10px;
+                }
+                h3{
+                    margin-top: 10px;
+                    font-family: Epilogue;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 32px; /* 133.333% */
+                    color: #333;
+                }
+                span{
+                    font-family: Epilogue;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 32px; /* 200% */
+                    color: rgba(51, 51, 51, 0.50);
+                }
+            }
+        }
+    }
+}
+
+
+// testimonial section 
+#test{
+    scroll-margin-top: 70px;
+    .container{
+        .test-head{
+            text-align: center;
+            padding: 30px 0px;
+            h2{
+                @extend .sub-title;
+                margin-bottom: 16px;
+            }
+            p{
+                max-width: 455px;
+                margin: auto;
+            }
+        }
+        .test-container{
+            padding: 60px 0px; 
+            @include flex(row, center, center);
+            flex-wrap: wrap;
+            gap: 2rem;
+            .test{
+                border: 1px solid #E0DADA;
+                border-radius: 6px;
+                padding: 26px;
+                max-width: 370px;
+                .test-info{
+                    margin-top: 30px;
+                    @include flex(row, flex-start, center);
+                    img{
+                        margin-right: 22px;
+                    }
+                    .info{
+                        h4{
+                            font-family: arial;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            color: #2E2E46;
+                        }
+                        span{
+                            font-family: arial;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            color: #69697B;
+                        }
+                    }
+                }
+            }
+        }
+        .our-clients{
+            padding: 50px 0px;
+            h2{
+                text-align: center;
+                font-family: Epilogue;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px; /* 133.333% */
+                color: #333;
+            }
+            .clients-brand{
+              @include flex(row, center, center);
+              flex-wrap: wrap;  
+              gap: 5rem;
+              padding: 40px 0px;
+            }
+        }
+    }
+}
+
+
+
+// blog section area 
+#blog{
+    .container{
+        .blog-head{
+            text-align: center;
+            h1{
+                padding: 60px 0px;
+                font-family: DM Sans;
+                word-spacing: 10px;
+                font-size: 42px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -1.886px;
+                color: #0D152E;
+            }
+        }
+        .blog-container{
+            @include flex(row, center, center);
+            padding: 40px 0px;
+            gap: 3rem;
+            flex-wrap: wrap;
+            .blog{
+                max-width: 350px;
+                border-radius: 15px;
+                border: 2px solid #d3cfcf;
+                img{
+                    border-top-right-radius: 15px;
+                    border-top-left-radius: 15px;
+                    max-width: 348px;
+                    width: 100%;
+
+                }
+                .blog-content{
+                    padding: 28px;
+                    h3{
+                        font-family: DM Sans;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 34px; /* 170% */
+                        letter-spacing: -0.66px;
+                        color: #0D152E;
+                    }
+                    p{
+                        margin-top: 20px;
+                        font-family: DM Sans;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px; /* 175% */
+                        letter-spacing: -0.5px;
+                        color: #81838C;
+                        margin-bottom: 25px;
+                    }
+                    a{
+                        font-family: DM Sans;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: -0.528px;
+                        text-decoration-line: underline;
+                        color: #F5AD0D;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+// custom classes
+.btn {
+    background: #f54c1e;
+    border-radius: 5px;
+    padding: 14px 24px;
+    cursor: pointer;
+    color: #ffff;
+    border: none;
+    transition: .2s;
+    &:hover {
+      background: #031333;
+    }
+  }
+
+.head-title {
+    color: #333;
+    text-align: center;
+    font-family: Epilogue;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 114.286% */
+    @media (max-width: 768px) {
+        font-size: 42px;
+        line-height: 45px;
+    }
+}
+
+.sub-title{
+    font-family: Epilogue;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    color: #000;
+    @media (max-width: 768px) {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+.title{
+    text-align: center;
+    font-family: Epilogue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    color: #333;
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+// mixing are here 
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

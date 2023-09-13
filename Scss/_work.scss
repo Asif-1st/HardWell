@@ -1,0 +1,76 @@
+#work{
+    scroll-margin-top: 80px;
+    .container{
+        .container1{
+            padding: 60px 0px;
+            @include flex(row, center, center);
+            flex-wrap: wrap;
+            gap: 5rem;
+            .container1-info{
+                h2{
+                    @extend .sub-title;
+                    margin-bottom: 20px;
+                }
+                p{
+                    max-width: 460px;
+                    line-height: 1.5;
+                    margin-bottom: 30px;
+                }
+                .check{
+                    @include flex(row, flex-start, center);
+                    margin-bottom: 10px;
+                    gap: 1rem;
+                    span{
+                        font-size: 16px;
+                        color: #333;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px; /* 200% */
+                        font-family: Epilogue;
+                    }
+                }
+            }
+            .container1-img{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .container-video{
+                img{
+                    border-radius: 15px;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 15px;
+                    margin-bottom: -300px;
+                }
+            }
+        }
+    }
+    .container2{
+        background: #F3F7F5;
+        .container{
+            @include flex(row, center, center);
+            gap: 12rem;
+            padding: 320px 0px 120px 0px;
+            flex-wrap: wrap;
+            h3{
+                font-family: Epilogue;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 48px; /* 120% */
+                color: #000;
+            }
+            P{
+                max-width: 440px;
+                font-family: Epilogue;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px; /* 200% */
+                color: #000;
+            }
+        }
+    }
+}

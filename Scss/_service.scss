@@ -1,0 +1,91 @@
+#service{
+    scroll-margin-top: 70px;
+    .container{
+        .service-head{
+            padding: 30px 0px;
+            h1{
+                @extend .head-title;
+                margin-bottom: 25px
+            }
+            p{
+                @extend .title;
+            }
+        }
+        .service-area{
+            .service-container{
+                @include flex(row, center, center);
+                padding: 60px 0px;
+                flex-wrap: wrap;
+                gap: 7rem;
+                .service{
+                    @include flex(column, center, flex-start);
+                    max-width: 330px;
+                    h2{
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 34px; /* 154.545% */
+                        font-family: Epilogue;
+                    }
+                    img{
+                        margin-bottom: 35px;
+                    }
+                    p{
+                        line-height: 27px;
+                    }
+                }
+            }
+            .service-info{
+                width: 100%;
+                gap: 5rem;
+                padding: 75px 0px;
+                @include flex(row, center, center);
+                flex-wrap: wrap;
+                .service-info-img{
+                    @include flex(row, center, center);
+                    img{
+                        height: auto;
+                        max-width: 400px;
+                        &:nth-child(2){
+                            max-width: 225px;
+                            height: auto;
+                            margin-left: -170px;
+                            margin-bottom: -360px;
+                        }
+                    }
+                }
+                .service-info-content{
+                    max-width: 470px;
+                    span{
+                        margin-bottom: 20px;
+                        font-family: Epilogue;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px; /* 200% */
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        color: rgba(51, 51, 51, 0.50);
+                    }
+                    h1{
+                        @extend .head-title;   
+                        text-align: start;
+                        margin-bottom: 28px;
+                    }
+                    p{
+                        margin-bottom: 35px;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-family: Epilogue;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px; /* 200% */
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+}

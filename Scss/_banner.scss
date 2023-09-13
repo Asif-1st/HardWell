@@ -1,0 +1,55 @@
+#banner{
+    background: #F2F2F2;
+    .container{
+        .banner-area{
+            padding: 40px 0px;
+            @include flex(row, space-between, center);
+            .banner-info{
+                flex-basis: 50%;
+                .banner-top{
+                    @include flex(row, flex-start, center);
+                    h4{
+                        font-family: Open Sans;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        color: #000;
+                    }
+                    span{
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: red;
+                        margin-right: 5px;
+                    }
+                }
+                .banner-mid{
+                    h1{
+                        font-family: Open Sans;
+                        font-size: 62px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 84px; /* 135.484% */
+                        color: #0E1017;
+                        margin-bottom: 20px;
+                        span{
+                            color: #EA3D3C;
+                        }
+                    }
+                    p{
+                        margin-bottom: 30px
+                    }
+                }
+                .banner-bottom{
+                    button{
+                        @extend .btn
+                    }
+                }
+            }
+            .banner-img{
+                @include flex(row, center, center);
+                flex-basis: 50%;
+            }
+        }
+    }
+}
